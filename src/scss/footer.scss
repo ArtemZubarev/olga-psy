@@ -1,0 +1,60 @@
+@use "media";
+
+.footer {
+  .container {
+    margin-bottom: 300px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+    @include media.desktop {
+      flex-direction: row;
+      gap: 30px;
+      justify-content: space-between;
+    }
+  }
+  &__info {
+    margin-bottom: 56px;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    @include media.desktop {
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+  &__occupation {
+    font-size: 24px;
+  }
+  &__name {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img {
+      width: 20px;
+    }
+  }
+  &__address {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img {
+      width: 20px;
+    }
+  }
+  &__copyright {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Lack";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./assets/fonts/lack/lack-regular.otf") format("opentype"),
+    url("./assets/fonts/lack/lack-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./assets/fonts/manrope/manrope-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro";
+  font-weight: "medium";
+  font-style: normal;
+  src: url("./assets/fonts/sf/SF-Pro-Display-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "SF Pro";
+  font-weight: "semibold";
+  font-style: normal;
+  src: url("./assets/fonts/sf/SF-Pro-Display-Semibold.otf") format("opentype");
+}

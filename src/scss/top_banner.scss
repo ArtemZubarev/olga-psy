@@ -1,0 +1,108 @@
+@use "media";
+
+.banner {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  margin-top: -1px;
+  overflow: hidden;
+
+  &__top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+
+    @include media.desktop {
+      flex-direction: row;
+    }
+  }
+
+  &__box {
+    @include media.desktop {
+      flex: 1 0 0;
+    }
+  }
+
+  &__prof {
+    font-size: 56px;
+    margin-bottom: 24px;
+  }
+
+  &__name {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  &__img {
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 30px;
+
+    @include media.desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    width: 100%;
+
+    &.mobile {
+      display: inline-block;
+
+      @include media.desktop {
+        display: none;
+      }
+    }
+
+    &.desktop {
+      display: none;
+      @include media.desktop {
+        display: inline-block;
+      }
+    }
+  }
+  &__facts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 72px;
+
+    @include media.desktop {
+      flex-direction: row;
+    }
+  }
+  .fact {
+    flex-grow: 1;
+    flex-basis: 0;
+    backdrop-filter: blur(70px);
+    box-shadow: inset -20px 3px 36px 0 rgba(255, 255, 255, 0.05);
+    background: linear-gradient(
+      221deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    );
+    padding: 32px;
+    border-radius: 8px;
+
+    @include media.desktop {
+      padding: 56px 48px;
+    }
+
+    &__title {
+      display: block;
+      font-size: 40px;
+      color: var(--yellow-500);
+      margin-bottom: 16px;
+
+      @include media.desktop {
+        margin-bottom: 24px;
+      }
+    }
+    &__text {
+      font-size: 24px;
+      line-height: 140%;
+    }
+  }
+}

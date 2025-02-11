@@ -1,0 +1,37 @@
+@use "media";
+
+.videos {
+  padding: 80px 0;
+  background: var(--black-100);
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include media.desktop {
+      font-size: 80px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__slider {
+    @include media.desktop {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+
+  &__slide {
+    margin-bottom: 40px;
+  }
+}
