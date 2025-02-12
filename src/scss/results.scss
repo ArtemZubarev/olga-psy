@@ -43,7 +43,7 @@
   }
 
   .slider {
-    display: flex;
+    // display: flex;
     &__slide {
       // min-width: 320px;
       // max-width: 312px;
@@ -55,7 +55,7 @@
     &__videoBox {
       position: relative;
       overflow: hidden;
-
+      min-width: 280px;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -83,7 +83,7 @@
       margin-top: 16px;
     }
     &__video {
-      // width: 280px;
+      min-width: 280px;
       height: 442px;
       border-radius: 8px;
       // width: 100%;
