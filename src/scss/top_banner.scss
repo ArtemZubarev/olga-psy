@@ -68,18 +68,18 @@
   &__img {
     width: 100%;
     margin-bottom: 30px;
-    display: none;
+    // display: none;
 
     @include media.desktop {
       margin-bottom: 0;
       display: block;
     }
 
-    &-mobile {
-      @include media.desktop {
-        display: none;
-      }
-    }
+    // &-mobile {
+    //   @include media.desktop {
+    //     display: none;
+    //   }
+    // }
   }
 
   &__button {

@@ -96,6 +96,7 @@ function toggleNav() {
 }
 
 const scrollButtons = document.querySelectorAll(".scrollTo");
+
 scrollButtons.forEach((button) => {
   const target =
     button.getAttribute("href") || button.getAttribute("aria-label");
@@ -103,6 +104,7 @@ scrollButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
     const element = document.querySelector(target);
+    sidebar.classList.remove("active");
 
     element.scrollIntoView({
       behavior: "smooth",

@@ -14,9 +14,19 @@
       </div>
       <img class="banner__leftGrid" src="./assets/img/left_grid.png" alt="" />
       <img class="banner__rightGrid" src="./assets/img/right_grid.png" alt="" />
-      <img class="banner__img" src="./assets/img/banner.png" alt="" />
 
-      <img src="./assets/img/olga.png" alt="" class="banner__img-mobile" />
+      <picture>
+        <source media="(max-width: 799px)" srcset="./assets/img/olga.png" />
+        <source media="(min-width: 900px)" srcset="./assets/img/banner.png" />
+        <img
+          class="banner__img"
+          src="./assets/img/banner.png"
+          alt="Chris standing up holding his daughter Elva"
+        />
+      </picture>
+      <!-- <img class="banner__img" src="./assets/img/banner2.jpg" alt="" />
+
+      <img src="./assets/img/olga.png" alt="" class="banner__img-mobile" /> -->
       <button
         aria-label="#signup"
         class="button blue banner__button mobile scrollTo"
