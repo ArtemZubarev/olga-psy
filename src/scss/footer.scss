@@ -21,13 +21,17 @@
     flex-direction: column;
     margin-bottom: 30px;
 
-    @include media.desktop {
+    @include media.desktop-l {
       flex-direction: row;
       gap: 30px;
     }
   }
   &__occupation {
     font-size: 24px;
+
+    @include media.desktop {
+      font-size: 48px;
+    }
   }
   &__name {
     font-family: var(--second-family);
@@ -39,14 +43,20 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 24px;
+    margin-bottom: 24px;
     img {
       width: 20px;
+    }
+    @include media.desktop-l {
+      margin-bottom: 0;
     }
   }
   &__address {
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 24px;
     img {
       width: 20px;
     }
