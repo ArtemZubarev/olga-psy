@@ -1,48 +1,26 @@
 const year = new Date().getFullYear();
 document.getElementById("year").innerHTML = year;
 
-$(document).ready(function () {
-  $(".slider")
-    .slick({
-      slidesToShow: 4,
-      // variableWidth: true,
-      infinite: false,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    })
-    .on("afterChange", function (event, slick, currentSlide, nextSlide) {
-      const playButtons = document.querySelectorAll(".slider__button");
-      const videos = document.querySelectorAll(".slider__video");
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  // direction: "vertical",
+  loop: false,
+  autoHeight: true,
 
-      playButtons.forEach((button) => {
-        const id = button.getAttribute("aria-label");
-        const video = document.querySelector(`#video-${id}`);
-        button.classList.remove("hidden");
-        video.pause();
-      });
-    });
+  breakpoints: {
+    1260: {
+      slidesPerView: 4,
+    },
+    900: {
+      slidesPerView: 3,
+    },
+    680: {
+      slidesPerView: 2,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  },
 });
 
 const playButtons = document.querySelectorAll(".slider__button");
@@ -55,6 +33,12 @@ playButtons.forEach((button) => {
   button.addEventListener("click", () => {
     video.play();
     button.classList.add("hidden");
+
+    videos.forEach((video) => {
+      if (video.getAttribute("id") !== `video-${id}`) {
+        video.pause();
+      }
+    });
   });
 });
 
