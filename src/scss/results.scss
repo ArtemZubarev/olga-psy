@@ -89,6 +89,10 @@
       height: 442px;
       border-radius: 8px;
       object-fit: cover;
+
+      &::-webkit-media-controls {
+        display: none !important;
+      }
       // width: 100%;
     }
     &__button {
