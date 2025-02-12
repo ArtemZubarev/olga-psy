@@ -106,6 +106,14 @@
       left: calc(50% - 28px);
       overflow: hidden;
 
+      @media not screen and (max-width: 900px) {
+        display: none;
+      }
+
+      @media screen and (min-width: 900px) {
+        display: block;
+      }
+
       &.hidden {
         display: none;
       }
