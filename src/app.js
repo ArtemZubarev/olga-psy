@@ -5,10 +5,17 @@ $(document).ready(function () {
   $(".slider")
     .slick({
       slidesToShow: 4,
-
+      // variableWidth: true,
       infinite: false,
       arrows: false,
       responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
         {
           breakpoint: 1024,
           settings: {
@@ -87,3 +94,20 @@ underLayer.addEventListener("click", (event) => {
 function toggleNav() {
   sidebar.classList.toggle("active");
 }
+
+const scrollButtons = document.querySelectorAll(".scrollTo");
+scrollButtons.forEach((button) => {
+  const target =
+    button.getAttribute("href") || button.getAttribute("aria-label");
+
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    const element = document.querySelector(target);
+
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "start",
+    });
+  });
+});

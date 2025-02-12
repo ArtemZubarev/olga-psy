@@ -32,6 +32,12 @@ a {
     background: var(--blue-500);
   }
 }
+*.hover {
+  &:hover {
+    transition: 0.2s;
+    opacity: 0.7;
+  }
+}
 button {
   background: unset;
   border: unset;

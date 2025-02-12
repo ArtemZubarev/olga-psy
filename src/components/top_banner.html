@@ -1,20 +1,26 @@
 <div class="banner dark wrapper">
   <div class="container withPadding">
     <div class="banner__top">
-      <include src="./src/components/tile.html"></include>
+      <!-- <include src="./src/components/tile.html"></include> -->
       <div class="banner__box">
         <h2 class="banner__prof">Семейный психолог</h2>
         <h1 class="banner__name">Ольга Латынцева</h1>
-        <button class="button blue banner__button desktop">
+        <button
+          aria-label="#signup"
+          class="button blue banner__button desktop scrollTo"
+        >
           Записаться на консультацию
         </button>
       </div>
-      <div class="banner__box">
-        <img class="banner__img" src="./assets/img/olga.png" alt="" />
-        <button class="button blue banner__button mobile">
-          Записаться на консультацию
-        </button>
-      </div>
+      <img class="banner__leftGrid" src="./assets/img/left_grid.png" alt="" />
+      <img class="banner__rightGrid" src="./assets/img/right_grid.png" alt="" />
+      <img class="banner__img" src="./assets/img/banner.png" alt="" />
+      <button
+        aria-label="#signup"
+        class="button blue banner__button mobile scrollTo"
+      >
+        Записаться на консультацию
+      </button>
     </div>
 
     <div class="banner__facts">

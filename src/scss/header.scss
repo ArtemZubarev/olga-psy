@@ -8,14 +8,22 @@
 
   @include media.desktop {
     padding-top: 24px;
+    justify-content: center;
   }
 
   .container {
     padding: 16px;
+
     @include media.desktop {
+      margin-left: 16px;
+      margin-right: 16px;
       padding: 30px;
       border: 1px solid rgba(255, 255, 255, 0.2);
+      max-width: calc(1320px - 32px);
       border-radius: 8px;
+
+      backdrop-filter: blur(70px);
+      box-shadow: inset -20px 3px 36px 0 rgba(255, 255, 255, 0.05);
       background: linear-gradient(
         221deg,
         rgba(255, 255, 255, 0.05) 0%,

@@ -1,3 +1,5 @@
+@use "media";
+
 .results {
   position: relative;
   overflow: hidden;
@@ -6,6 +8,12 @@
 
   &__title {
     margin-bottom: 42px;
+
+    @include media.desktop {
+      font-size: 80px;
+      margin-bottom: 72px;
+      margin-top: 100px;
+    }
   }
 
   &:before {
@@ -36,6 +44,10 @@
     &__videoBox {
       position: relative;
       overflow: hidden;
+
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
     &__slideBox {
       // min-width: 320px;
@@ -63,7 +75,7 @@
       // width: 280px;
       height: 442px;
       border-radius: 8px;
-      width: 100%;
+      // width: 100%;
     }
     &__button {
       img {

@@ -10,7 +10,9 @@
 
     @include media.desktop {
       font-size: 80px;
+      line-height: 90px;
       flex: 1;
+      padding-right: 20px;
     }
   }
 
@@ -52,6 +54,10 @@
       color: #fff;
       opacity: 0.6;
     }
+
+    @include media.desktop {
+      margin-bottom: 24px;
+    }
   }
 
   &__submit {
@@ -61,6 +67,8 @@
   }
 
   &__social {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
     backdrop-filter: blur(70px);
     box-shadow: inset -20px 3px 36px 0 rgba(255, 255, 255, 0.05);
     background: linear-gradient(
