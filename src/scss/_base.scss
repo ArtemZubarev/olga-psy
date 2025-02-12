@@ -20,7 +20,7 @@ a {
   box-sizing: border-box;
 }
 * {
-  font-family: Lack !important;
+  font-family: Lack, sans-serif !important;
   &.dark {
     background: var(--black-500);
     > * {
