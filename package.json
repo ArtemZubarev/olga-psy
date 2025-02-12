@@ -5,20 +5,20 @@
   "source": "src/index.html",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build",
+    "build": "parcel build --no-optimize",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@parcel/optimizer-svgo": "^2.13.3",
     "parcel": "^2.13.3"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.13.3",
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^2.0.1",
-    "svgo": "^3"
+    "svgo": "^3",
+    "@parcel/optimizer-svgo": "^2.13.3"
   }
 }
