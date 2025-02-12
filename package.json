@@ -12,11 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@parcel/optimizer-svgo": "^2.13.3",
     "parcel": "^2.13.3"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.13.3",
     "posthtml-doctype": "^1.1.1",
-    "posthtml-include": "^2.0.1"
+    "posthtml-include": "^2.0.1",
+    "svgo": "^3"
   }
 }
