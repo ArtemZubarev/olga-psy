@@ -1,8 +1,12 @@
 @use "media";
 
 .videos {
-  padding: 80px 0;
+  padding: 30px 0 40px 0;
   background: var(--black-100);
+
+  @include media.desktop {
+    padding: 80px 0;
+  }
 
   &__title {
     margin-bottom: 40px;

@@ -1,7 +1,11 @@
 @use "media";
 
 .photos {
-  padding: 80px 0;
+  padding: 30px 0 40px 0;
+
+  @include media.desktop {
+    padding: 80px 0;
+  }
 
   &__title {
     color: #fff;
@@ -16,8 +20,12 @@
 
   &__grid {
     display: flex;
+    flex-direction: column;
     gap: 8px;
-    justify-content: stretch;
+    @include media.tablet {
+      flex-direction: row;
+      justify-content: stretch;
+    }
     @include media.desktop {
       gap: 24px;
     }

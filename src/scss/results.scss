@@ -3,8 +3,12 @@
 .results {
   position: relative;
   overflow: hidden;
-  padding: 80px 0;
+  padding: 30px 0 40px 0;
   background: var(--black-100);
+
+  @include media.desktop {
+    padding: 80px 0;
+  }
 
   &__title {
     margin-bottom: 42px;
@@ -47,6 +51,17 @@
     min-height: 620px;
 
     &-slide {
+    }
+    .swiper-scrollbar {
+      // --swiper-scrollbar-border-radius: 10px;
+      // --swiper-scrollbar-top: auto;
+      // --swiper-scrollbar-bottom: 4px;
+      // --swiper-scrollbar-left: auto;
+      // --swiper-scrollbar-right: 4px;
+      // --swiper-scrollbar-sides-offset: 1%;
+      // --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
+      --swiper-scrollbar-drag-bg-color: var(--blue-500);
+      // --swiper-scrollbar-size: 4px;
     }
   }
 

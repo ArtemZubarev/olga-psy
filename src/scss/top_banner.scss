@@ -3,7 +3,7 @@
 .banner {
   position: relative;
   padding-top: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
   margin-top: -1px;
   overflow: hidden;
 
@@ -16,6 +16,7 @@
     @include media.desktop {
       margin-top: -150px;
       min-height: 850px;
+      padding-bottom: 80px;
     }
   }
 
@@ -68,11 +69,13 @@
   &__img {
     width: 100%;
     margin-bottom: 30px;
+    margin-top: 80px;
     // display: none;
 
     @include media.desktop {
       margin-bottom: 0;
       display: block;
+      margin-top: 0px;
     }
 
     // &-mobile {
@@ -89,6 +92,7 @@
 
     &.mobile {
       display: inline-block;
+      margin-top: 0px;
 
       @include media.desktop {
         display: none;
