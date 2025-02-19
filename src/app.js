@@ -18,6 +18,9 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 2,
     },
     300: {
+      pagination: {
+        el: ".swiper-pagination",
+      },
       scrollbar: {
         el: ".swiper-scrollbar",
       },
