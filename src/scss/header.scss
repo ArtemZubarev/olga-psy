@@ -56,9 +56,6 @@
       display: none;
     }
   }
-  &__mobile-block {
-    border-top: 2px solid #fff;
-  }
   &__socials {
     &.special {
       display: flex;
@@ -110,7 +107,8 @@
 
   &__mobile-block {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    border-top: 2px solid #fff;
 
     @include media.desktop {
       display: none;

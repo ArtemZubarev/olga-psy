@@ -3,7 +3,7 @@
 .banner {
   position: relative;
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
   margin-top: -1px;
   overflow: hidden;
 
@@ -16,7 +16,7 @@
     @include media.desktop {
       margin-top: -150px;
       min-height: 850px;
-      padding-bottom: 80px;
+      margin-bottom: 80px;
     }
   }
 
@@ -53,16 +53,16 @@
   &__name {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
 
     @include media.desktop {
       margin-top: 36px;
-      font-size: 30px;
+      font-size: 40px;
     }
 
     @include media.desktop-l {
       margin-top: 56px;
-      font-size: 40px;
+      font-size: 60px;
     }
   }
 
