@@ -21,6 +21,17 @@
     }
   }
 
+  &__small {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include media.desktop {
+      font-size: 24px;
+    }
+  }
+
   &__form {
     @include media.desktop {
       flex: 1;
@@ -114,5 +125,17 @@
       );
       padding: 0 43px;
     }
+  }
+}
+.mentoring {
+  .signup__title {
+    text-align: center;
+  }
+  .signup__box {
+    flex-direction: column;
+  }
+  .signup__form {
+    max-width: 648px;
+    margin: 0 auto;
   }
 }

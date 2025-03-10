@@ -31,6 +31,16 @@
     }
   }
 
+  &.dark {
+    background: var(--black-500);
+    &:before {
+      display: none;
+    }
+    .lecturer__title {
+      color: #fff;
+    }
+  }
+
   &__title {
     position: relative;
     z-index: 2;

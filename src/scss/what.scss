@@ -1,0 +1,95 @@
+@use "media";
+
+.what {
+  position: relative;
+  padding: 30px 0 40px 0;
+  overflow: hidden;
+
+  @include media.desktop {
+    padding: 0 0 80px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    color: #fff;
+
+    @include media.desktop {
+      font-size: 80px;
+      margin-top: 100px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include media.desktop {
+      flex-direction: row;
+    }
+
+    &:nth-of-type(1) {
+      @include media.desktop {
+        .what__item {
+          width: 33.3%;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      @include media.desktop {
+        .what__item {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    // align-items: center;
+    border-radius: 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 32px 16px;
+    backdrop-filter: blur(70px);
+    box-shadow: inset -20px 3px 36px 0 rgba(255, 255, 255, 0.05);
+    background: linear-gradient(
+      221deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    );
+
+    @include media.desktop {
+      padding: 40px;
+    }
+  }
+
+  &__number {
+    font-size: 48px;
+    color: var(--yellow-500);
+
+    @include media.desktop {
+      font-size: 80px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    color: #fff;
+    line-height: 150%;
+
+    @include media.desktop {
+      font-size: 24px;
+    }
+  }
+  &__wrapper {
+    @include media.desktop {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}
