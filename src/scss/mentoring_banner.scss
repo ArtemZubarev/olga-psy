@@ -159,17 +159,24 @@
 
     &__title {
       display: block;
-      font-size: 40px;
+      font-size: 36px;
       color: var(--yellow-500);
       margin-bottom: 16px;
 
+      @include media.phone-sm {
+        font-size: 40px;
+      }
       @include media.desktop {
         margin-bottom: 24px;
       }
     }
     &__text {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 140%;
+
+      @include media.phone-sm {
+        font-size: 24px;
+      }
     }
   }
 

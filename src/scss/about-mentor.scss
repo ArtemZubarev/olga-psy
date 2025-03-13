@@ -6,6 +6,10 @@
   // background: var(--black-100);
   overflow: hidden;
 
+  &.margin-neg {
+    margin-top: -60px;
+  }
+
   @include media.desktop {
     padding: 0 0 80px;
   }
