@@ -44,17 +44,23 @@
   }
 
   &__title {
-    font-size: 38px;
+    font-size: 32px;
     margin-bottom: 24px;
 
+    @include media.phone-sm {
+      font-size: 38px;
+    }
+
+    @include media.tablet {
+      font-size: 70px;
+    }
     @include media.desktop {
-      font-size: 90px;
+      font-size: 70px;
       margin-top: 160px;
     }
 
     @include media.desktop-l {
       font-size: 96px;
-      margin-top: 160px;
     }
   }
 
@@ -168,6 +174,10 @@
   }
 
   &__group {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+
     @include media.desktop {
       display: flex;
       gap: 24px;

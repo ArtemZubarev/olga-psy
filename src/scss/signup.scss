@@ -130,6 +130,14 @@
 .mentoring {
   .signup__title {
     text-align: center;
+    font-size: 34px;
+
+    @include media.phone-sm {
+      font-size: 40px;
+    }
+    @include media.desktop {
+      font-size: 80px;
+    }
   }
   .signup__box {
     flex-direction: column;

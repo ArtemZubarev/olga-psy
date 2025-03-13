@@ -86,10 +86,10 @@
     }
   }
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     @include media.desktop {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
     }
   }
 }

@@ -36,6 +36,21 @@
       @include media.desktop {
         padding: 22px;
       }
+
+      .header__socials {
+        gap: 3px;
+
+        @include media.phone-sm {
+          gap: 14px;
+        }
+      }
+      .header__button {
+        max-width: 160px;
+
+        @include media.phone-sm {
+          max-width: 200px;
+        }
+      }
     }
   }
 
