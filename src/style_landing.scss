@@ -1,0 +1,30 @@
+@use "./scss/_base";
+@use "./scss/_variables";
+@use "./scss/_fonts";
+@use "./scss/reset.css";
+
+// Landing blocks or pages are linked here
+
+@use "./scss/header";
+@use "./scss/footer";
+@use "./scss/landing/banner";
+@use "./scss/about";
+@use "./scss//landing/problems";
+
+@use "./scss/landing/reviews";
+@use "./scss/landing/results";
+@use "./scss/prices";
+@use "./scss/photos";
+@use "./scss/videos";
+@use "./scss/lecturer";
+@use "./scss/signup";
+@use "./scss/sidebar";
+@use "./scss/tile";
+@use "./scss/mentoring_banner";
+@use "./scss/about-mentor";
+@use "./scss/who";
+@use "./scss/what";
+
+// -----
+
+@use "./scss/_media";
